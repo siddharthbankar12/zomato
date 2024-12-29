@@ -46,7 +46,7 @@
 
 .ls {
   height: 53px;
-  width: 45%;
+  width: 55%;
   display: flex;
   margin: 35px auto;
   border: 1px solid black;
@@ -66,7 +66,7 @@
 }
 
 .location {
-  width: 40%;
+  width: 30%;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -77,7 +77,7 @@
 }
 
 .searchBar {
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -85,6 +85,8 @@
 
 .searchBar > span {
   color: gray;
+  font-size: 25px;
+  padding-right: 10px;
 }
 
 select {
@@ -101,24 +103,124 @@ input {
 }
 
 .options {
-  border: 2px solid black;
   height: 260px;
-  width: 60%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 55px auto;
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.options > div {
+.selection {
   height: 100%;
-  width: 33.3%;
+  width: 33.4%;
+  border: 1px solid #dcdcdc;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
-.selection > img {
+.selection:hover {
+  transform: scale(1.1);
+}
+
+.image {
   height: 70%;
   width: 100%;
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .titDes {
   height: 30%;
   width: 100%;
+  font-family: "Montserrat", serif;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.collections {
+  width: 70%;
+  height: 433px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Montserrat", serif;
+}
+
+.Cdes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Cdesr {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+
+.cbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 320px;
+  width: 100%;
+  color: white;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.CcontentOne {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  background-image: url("https://b.zmtcdn.com/data/collections/b6908536f32b2c4212548d5178451e9b_1734414834.png");
+  background-size: cover;
+}
+
+.CcontentTwo {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  background-image: url("https://b.zmtcdn.com/data/collections/f0c27b8de279de99da96b9620057c145_1712923153.png");
+  background-size: cover;
+}
+
+.CcontentThree {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  background-image: url("https://b.zmtcdn.com/data/collections/26663d5efa377704a8783795f32b6167_1727171295.png");
+  background-size: cover;
+}
+
+.CcontentFour {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  background-image: url("https://b.zmtcdn.com/data/collections/a862476becb90ae248589e44101b97d2_1709811922.jpg");
+  background-size: cover;
 }
