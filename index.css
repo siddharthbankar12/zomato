@@ -147,7 +147,7 @@ input {
 .collections {
   width: 70%;
   height: 433px;
-  margin: 0 auto;
+  margin: 55px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -223,4 +223,269 @@ input {
   padding: 15px;
   background-image: url("https://b.zmtcdn.com/data/collections/a862476becb90ae248589e44101b97d2_1709811922.jpg");
   background-size: cover;
+}
+
+.locPop {
+  width: 70%;
+  height: 379px;
+  margin: 55px auto;
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lpDes {
+  font-size: 36px;
+  width: 100%;
+  height: 20%;
+}
+
+.lcPlace {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lcPlace > div {
+  width: calc(90% / 3);
+  display: flex;
+  padding: 20px 15px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+}
+
+.lpleft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lpleft > :nth-child(1) {
+  font-size: 22px;
+}
+
+.getapp {
+  width: 100%;
+  height: 480px;
+  margin: 55px 0;
+  display: flex;
+  align-items: center;
+  background-color: #fffbf7;
+  font-family: "Montserrat", serif;
+  padding: 20px 250px;
+}
+
+.galeft {
+  width: 50%;
+  height: 100%;
+}
+
+.galeft > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.garight {
+  height: 100%;
+  width: 50%;
+  padding-right: 50px;
+}
+
+.gahd {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gahead {
+  font-size: 42px;
+  font-weight: 500;
+}
+.gades > p {
+  text-align: justify;
+}
+
+.gafd {
+  width: 100%;
+  height: 70%;
+}
+
+.gaform {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gafoption {
+  display: flex;
+  font-size: 18px;
+}
+
+.gafoption > div {
+  display: flex;
+  gap: 10px;
+  accent-color: rgb(239, 79, 95);
+  padding-right: 25px;
+}
+
+.gafms {
+  display: flex;
+  gap: 10px;
+}
+
+.gafms > input {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  width: 70%;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: "Montserrat", serif;
+}
+
+.gafms > button {
+  height: 48px;
+  width: 30%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(239, 79, 95);
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Montserrat", serif;
+}
+
+.gadownapp {
+  height: 60%;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gadownapp > p {
+  height: 20%;
+}
+
+.gadownapp > div {
+  height: 80%;
+}
+.gadownapp > div > img {
+  width: 30%;
+}
+
+.explore {
+  width: 70%;
+  height: 490px;
+  margin: 55px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 45px;
+  font-family: "Montserrat", serif;
+}
+
+.explore > h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.explore > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 0 25px;
+}
+
+.magic {
+  background-color: #f8f8f8;
+}
+
+.footer {
+  width: 70%;
+  height: 506px;
+
+  margin: 110px auto 0 auto;
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.frlogo > img {
+  width: 25%;
+}
+
+.fregion {
+  display: flex;
+}
+
+.coulan {
+  display: flex;
+  gap: 25px;
+}
+
+.cl {
+  display: flex;
+  padding: 10px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 12px;
+}
+
+.cl > select {
+  background-color: white;
+  font-size: 16px;
+}
+
+.azfls {
+  height: 238.4px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.azfls > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.azfls > div > :nth-child(1) {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.fcr {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.socialLinks > div > i {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 14px;
+  margin-right: 5px;
+}
+
+.socialLinks > img {
+  width: 50%;
+  margin-top: 5px;
 }
