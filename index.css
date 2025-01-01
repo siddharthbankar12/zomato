@@ -26,6 +26,10 @@
   list-style-type: none;
 }
 
+.left > span {
+  display: none;
+}
+
 .left,
 .right {
   margin: 25px 0;
@@ -70,6 +74,7 @@
   display: flex;
   align-items: center;
   padding-left: 15px;
+  color: black;
 }
 
 .location > label > span {
@@ -78,7 +83,7 @@
 }
 
 .location > select {
-  padding-right: 120px;
+  /* padding-right: 120px; */
   border: none;
   outline: none;
   background-color: rgb(245, 241, 241);
@@ -124,8 +129,9 @@
 }
 
 .image {
-  height: 70%;
   width: 100%;
+  height: 70%;
+  overflow: hidden;
 }
 
 .image > img {
@@ -144,6 +150,10 @@
   justify-content: space-around;
 }
 
+.titDes > :nth-child(1) {
+  font-weight: 600;
+}
+
 .collections {
   width: 70%;
   height: 433px;
@@ -158,6 +168,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .Cdesr {
@@ -219,13 +230,9 @@
 
 .lpDes {
   font-size: 36px;
-  width: 100%;
-  height: 20%;
 }
 
 .lcPlace {
-  width: 100%;
-  height: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -249,6 +256,12 @@
   justify-content: space-around;
 }
 
+.lpright {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .lpleft > :nth-child(1) {
   font-size: 22px;
 }
@@ -269,7 +282,6 @@
 }
 
 .galeft {
-  /* width: 100%; */
   height: 100%;
 }
 
@@ -376,7 +388,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 45px;
   font-family: "Montserrat", serif;
 }
 
@@ -387,14 +398,14 @@
 
 .explore > div {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   border: 1px solid #dcdcdc;
   border-radius: 12px;
   font-size: 20px;
-  padding: 0 25px;
+  padding: 25px;
 }
 
 .footer {
@@ -409,6 +420,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.frlogo {
+  display: flex;
+  align-items: center;
 }
 
 .frlogo > img {
@@ -478,7 +494,182 @@
 
 /* Mobile devices */
 @media (max-width: 576px) {
-  /* Styles for mobile devices */
+  * {
+    overflow-x: hidden;
+  }
+
+  .options,
+  .collections,
+  .explore,
+  .magicc {
+    width: 90%;
+  }
+
+  .left > span {
+    display: block;
+  }
+
+  .left > p,
+  .right {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+
+  .ls {
+    width: 80%;
+    height: 100px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .location,
+  .searchBar {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(245, 241, 241);
+    padding: 0 15px;
+  }
+
+  .searchBar > input {
+    width: 100%;
+  }
+
+  .location {
+    justify-content: space-between;
+  }
+
+  .location > label {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .options {
+    height: 520px;
+    flex-wrap: wrap;
+  }
+
+  .selection {
+    height: calc(96% / 2);
+    width: calc(90% / 2);
+  }
+  .image {
+    height: 60%;
+  }
+
+  .titDes {
+    height: 40%;
+    font-size: 11px;
+  }
+
+  .Cdes {
+    font-size: 12px;
+  }
+
+  .Cdesr > span {
+    padding-right: 3px;
+  }
+
+  .cbox {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 15px;
+  }
+
+  .CcontentOne,
+  .CcontentTwo,
+  .CcontentThree,
+  .CcontentFour {
+    width: calc(90% / 2);
+  }
+
+  .locPop {
+    width: 90%;
+    height: 1024px;
+  }
+
+  .lcPlace > div {
+    width: calc(100% / 1);
+  }
+
+  .lpDes {
+    font-size: 27px;
+  }
+
+  .magicc {
+    margin: 0 auto;
+  }
+
+  .garight {
+    padding-right: 0;
+  }
+
+  .galeft {
+    display: none;
+  }
+
+  .gahead {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .gafoption {
+    font-size: 15px;
+  }
+
+  .gaform {
+    height: 100px;
+  }
+
+  .gafms > input {
+    font-size: 15px;
+  }
+  .gafms > button {
+    font-size: 12px;
+  }
+
+  .explore {
+    height: 490px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+    font-family: "Montserrat", serif;
+  }
+
+  .explore > h1 {
+    font-size: 28px;
+  }
+
+  .explore > div {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .explore > div > span {
+    padding-right: 10px;
+    font-size: 18px;
+  }
 }
 
 /* Tablets */
@@ -500,7 +691,15 @@
 
   .description {
     font-size: 30px;
-    text-align: justify;
+    text-align: center;
+  }
+
+  .titDes {
+    font-size: 11px;
+  }
+
+  .Cdes {
+    font-size: 14px;
   }
 
   .cbox {
@@ -527,6 +726,14 @@
 
   .lpDes {
     font-size: 27px;
+  }
+
+  .lpleft {
+    font-size: 16px;
+  }
+
+  .lpleft > :nth-child(1) {
+    font-size: 18px;
   }
 
   .magicc {
@@ -574,6 +781,10 @@
 
   .azfls > div > :nth-child(1) {
     font-size: 12px;
+  }
+
+  .frlogo > img {
+    width: 35%;
   }
 }
 
