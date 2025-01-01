@@ -77,6 +77,11 @@
   color: black;
 }
 
+.location > label {
+  display: flex;
+  align-items: center;
+}
+
 .location > label > span {
   color: red;
   padding-right: 5px;
@@ -165,6 +170,7 @@
 }
 
 .Cdes {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -501,7 +507,8 @@
   .options,
   .collections,
   .explore,
-  .magicc {
+  .magicc,
+  .magic {
     width: 90%;
   }
 
@@ -553,10 +560,10 @@
     justify-content: space-between;
   }
 
-  .location > label {
+  /* .location > label {
     display: flex;
     align-items: center;
-  }
+  } */
 
   .description {
     font-size: 26px;
@@ -647,6 +654,10 @@
     font-size: 12px;
   }
 
+  .gadownapp > div > img {
+    width: 45%;
+  }
+
   .explore {
     height: 490px;
     margin: 55px auto;
@@ -669,6 +680,43 @@
   .explore > div > span {
     padding-right: 10px;
     font-size: 18px;
+  }
+
+  .magic {
+    height: 700px;
+    margin: 15px auto;
+  }
+
+  .fregion {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cl {
+    padding: 5px;
+  }
+
+  .cl > label {
+    display: flex;
+    align-items: center;
+  }
+
+  .cl > label > span {
+    font-size: 18px;
+  }
+
+  .cl > select {
+    font-size: 14px;
+  }
+
+  .azfls {
+    height: 480px;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .socialLinks > img {
+    display: none;
   }
 }
 
